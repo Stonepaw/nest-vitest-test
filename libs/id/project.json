@@ -27,6 +27,12 @@
         "jestConfig": "libs/id/jest.config.js",
         "passWithNoTests": true
       }
+    },
+    "vitest": {
+      "executor": "@nxext/vitest:vitest",
+      "options": {
+        "command": "run"
+      }
     }
   },
   "tags": []

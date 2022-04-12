@@ -4,28 +4,20 @@
   "targets": {
     "build": {
       "executor": "@nrwl/js:tsc",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/libs/notid",
         "tsConfig": "libs/notid/tsconfig.lib.json",
         "packageJson": "libs/notid/package.json",
         "main": "libs/notid/src/index.ts",
-        "assets": [
-          "libs/notid/*.md"
-        ]
+        "assets": ["libs/notid/*.md"]
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
+      "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "libs/notid/**/*.ts"
-        ]
+        "lintFilePatterns": ["libs/notid/**/*.ts"]
       }
     },
     "test": {
